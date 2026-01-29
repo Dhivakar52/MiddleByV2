@@ -2502,6 +2502,27 @@ height: 100%;
 
 
 
+.inner-submenu {
+  list-style: none;
+  padding-left: 10px;
+  display: none;
+  background: #F1F7FE;
+}
+
+.inner-submenu.show {
+  display: block;
+}
+
+.dropdown-submenu > a::after {
+  content: "▾";
+  float: right;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.inner-submenu  li:nth-last-child(1)  {
+    margin: 0px !important;
+    border-bottom: 0px solid var(--main-color);
+}
 
 
 
