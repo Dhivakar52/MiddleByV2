@@ -4368,9 +4368,10 @@ border: none;
     right: 0px;
     display: flex;
     justify-content: end;
+   
 }
 .dish-carousel .owl-nav button.owl-next, .dish-carousel .owl-nav button.owl-prev{
-background: transparent !important;
+ background-color: var(--white-color) !important;
     color: black !important;
     border: 1px solid #00000066;
     font-size: 11px !important;
@@ -4387,6 +4388,7 @@ background: transparent !important;
 .employee-month{
 position: absolute;
     bottom: 34px;
+    background-color: var(--white-color) !important;
 }
 .employee-month p{
   border: 0.5px solid #00000080;
