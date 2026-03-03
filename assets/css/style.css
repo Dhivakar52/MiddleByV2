@@ -73,14 +73,21 @@
     --main-color: #003250;
     --text-color-white: #ffff;
     --unactive_navTab: #858585;
-    --tab_bg_color:#F3F4F6
+    --tab_bg_color:#F3F4F6;
+  --purple-color:#E3E9FC;
+   --card-color:#4B66BB80;
+   --card-bg: #F1F4FD;
+   --white-color: #FFFFFF;
+   --hover-color: #0093B1;
+   
+
 }
 
 
 /********** Roboto FONT **************/
 body {
   color: #000;
-  background: #E8EDF3;
+  background: #ffff;
   font-size: 14px;
   font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
@@ -1813,10 +1820,7 @@ margin-bottom: 15px;
   position: relative;
 }
 
-hr{
-  margin: 2px 0px 15px;
-  border: 1px solid #0000004D;
-}
+
 
 .leftSideImage{
   display: flex;
@@ -2143,7 +2147,7 @@ hr{
 /* Home Version 3 */
 
 .home_new_tabs{
-  background-color: var(--tab_bg_color);
+  background-color: var(--purple-color);
   border-radius: 8px;
 }
 .home_new_tabs .nav-link {
@@ -2180,7 +2184,7 @@ hr{
    .message-card {
            padding: 23px 20px;
             border-bottom: 1px solid #e9ecef;
-              background-color: #F1F7FE;
+              background-color: var(--white-color);
               border-radius: 8px;
               margin-bottom: 10px;
         }
@@ -2462,8 +2466,12 @@ hr{
 }
 .marginLeftSpace{
   margin-left: 20px;
+  position: relative;
 }
-
+.view-more{
+  position: absolute;
+  bottom:0;
+}
 .latestMiddleCard .card{
 height: 100%;
 }
@@ -3794,16 +3802,16 @@ border: none;
 
    
     .color-2024 ,.color-2024 > .entry-details span{
-      color: #0275d8; 
+      color: #C3382B; 
     }
     .color-2025,.color-2025 > .entry-details span {
-      color: #d9534f; 
+      color: #EFAD4F; 
     }
     .color-2026 ,.color-2026 > .entry-details span   {
       color: #f0ad4e; 
     }
      .color-2025 li::before  {
-      background-color: #d9534f;  
+      background-color: #EFAD4F;  
       border-radius: 50%;
           width: 10px !important;
     height: 10px !important;
@@ -3815,7 +3823,7 @@ border: none;
     height: 10px !important;
     }
      .color-2024 li::before  {
-      background-color: #0275d8; 
+      background-color: #C3382B; 
       border-radius: 50%;
           width: 10px !important;
     height: 10px !important;
@@ -4253,7 +4261,7 @@ border: none;
         }
 
        .menu-card {
-            background: #f0f4f8;
+            background: #0F5680;
             border: none;
             border-radius: 4px;
             padding: 18px 20px;
@@ -4291,9 +4299,14 @@ border: none;
 
 /* When hovering over the whole card */
 .menu-card:hover {
-    background: var(--main-color);
+    background: var(--hover-color);
     color: #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu-icon svg path  {
+    color: #fff;
+    fill: #fff;
 }
 
 
@@ -4322,7 +4335,7 @@ border: none;
         .menu-title {
             font-size: 16px;
             font-weight: 400;
-            color: #000000;
+           color: #fff;
             margin: 0;
         }
 
@@ -4351,6 +4364,8 @@ border: none;
 
 .dish-carousel .owl-nav {
     margin-top: 10px;
+    position: relative;
+    right: 0px;
     display: flex;
     justify-content: end;
 }
@@ -4371,7 +4386,7 @@ background: transparent !important;
 }
 .employee-month{
 position: absolute;
-    bottom: 21px;
+    bottom: 34px;
 }
 .employee-month p{
   border: 0.5px solid #00000080;
@@ -5182,6 +5197,108 @@ color: white;
         .section_height{
           height: auto;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home Page v2 */
+
+
+.content-box-v2{
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  height:100%;
+  position: relative;
+  border: 1px solid var(--card-color);
+  background-color: var(--card-bg);
+}
+.use-flex_v2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding: 10px 20px;
+    background: var(--purple-color);
+    border-bottom:1px solid var(--card-color);
+    border-radius: 10px 10px 0 0;
+}
+ .section-title_v2 {
+   color: var(--main-color);
+   font-size: 22px;
+   font-weight: bold;
+ }
+hr{
+  margin: 0px 0px 0px;
+  border: 0px solid #0000004D;
+}
+.contentSpace{
+  padding: 10px 20px;
+}
+.bg-purple{
+  background-color: var(--purple-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***** Responsive CSS START *****/
 @media only screen and (min-width: 1920px) {
   .custom-container {
@@ -5421,12 +5538,28 @@ color: white;
 @media only screen and (max-width: 667px) {
 }
 @media (min-width: 576px) {
+
 }
 @media only screen and (max-width: 575px) {
+
+  .view-more {
+    position: static;
+}
 }
 @media only screen and (min-width: 480px) {
 }
 @media only screen and (max-width: 480px) {
+
+
+
+
+
+
+
+
+
+
+
   .inner-submenu {
   position: static; 
       width: 100%;
